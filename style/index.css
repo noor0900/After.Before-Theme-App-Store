@@ -1,0 +1,1255 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  background-color: white;
+}
+nav > img {
+  position: absolute;
+  top: 15px;
+  left: 132px;
+}
+nav > ul {
+  position: absolute;
+  top: 10px;
+  left: 630px;
+  list-style: none;
+}
+.active {
+  color: #e65100;
+  cursor: pointer;
+  border-bottom: 3px solid #e65100;
+}
+nav > ul > li {
+  position: relative;
+  padding: 16px;
+  float: left;
+  font-size: 17px;
+  font-family: "josefi", sans-serif;
+}
+nav > ul > li:hover {
+  color: #e65100;
+  cursor: pointer;
+  border-bottom: 3px solid #e65100;
+}
+
+.smain {
+  position: relative;
+  width: 100%;
+  height: 547px;
+  overflow: hidden;
+  /* border: 3px solid #000; */
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  width: 500%;
+  transition-duration: 1s;
+}
+.pic1 {
+  height: 100%;
+  width: 20%;
+  background-image: linear-gradient(
+      rgba(255, 102, 0, 0.241),
+      rgba(255, 85, 0, 0.247)
+    ),
+    url(../img/slider-01.jpg);
+  background-size: 100% 100%;
+  float: left;
+}
+.pic2 {
+  height: 100%;
+  width: 20%;
+  background-image: linear-gradient(
+      rgba(255, 102, 0, 0.241),
+      rgba(255, 85, 0, 0.247)
+    ),
+    url(../img/slider-02.jpg);
+  background-size: 100% 100%;
+  float: left;
+}
+.pic3 {
+  height: 100%;
+  width: 20%;
+  background-image: linear-gradient(
+      rgba(255, 102, 0, 0.241),
+      rgba(255, 85, 0, 0.247)
+    ),
+    url(../img/slider-03.jpg);
+  background-size: 100% 100%;
+  float: left;
+}
+.pic4 {
+  height: 100%;
+  width: 20%;
+  background-image: linear-gradient(
+      rgba(255, 102, 0, 0.241),
+      rgba(255, 85, 0, 0.247)
+    ),
+    url(../img/slider-04.jpg);
+  background-size: 100% 100%;
+  float: left;
+}
+.pic5 {
+  height: 100%;
+  width: 20%;
+  background-image: linear-gradient(
+      rgba(255, 102, 0, 0.241),
+      rgba(255, 85, 0, 0.247)
+    ),
+    url(../img/slider-05.jpg);
+  background-size: 100% 100%;
+  float: left;
+}
+
+.smain > input:checked + label {
+  background-color: white;
+  color: black;
+  border-top: 2px solid #000;
+}
+.l2 {
+  padding: 6px 12px;
+  /* border: 1px solid orange; */
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  left: 40%;
+  font-weight: bold;
+  color: white;
+  font-weight: 100%;
+  bottom: 0px;
+  z-index: 1;
+}
+.l2:hover {
+  background-color: rgba(0, 0, 0, 0.313);
+}
+.smain > input {
+  display: none;
+}
+.lab1 {
+  left: 43%;
+}
+.lab2 {
+  left: 46%;
+}
+.lab3 {
+  left: 49%;
+}
+.lab4 {
+  left: 52%;
+}
+.input1:checked + label ~ .slider {
+  left: 0%;
+}
+.input2:checked + label ~ .slider {
+  left: -100%;
+}
+.input3:checked + label ~ .slider {
+  left: -200%;
+}
+.input4:checked + label ~ .slider {
+  left: -300%;
+}
+.input5:checked + label ~ .slider {
+  left: -400%;
+}
+.card {
+  position: relative;
+  height: 450px;
+  width: 40%;
+  /* border: 1px solid red; */
+  float: left;
+  margin: 60px;
+}
+.card {
+  left: 80px;
+}
+.card1 {
+  width: 22%;
+}
+.card > h1 {
+  position: relative;
+  color: white;
+  font-size: 33px;
+  top: 85px;
+  left: 38px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card > p {
+  position: relative;
+  color: white;
+  font-size: 22px;
+  top: 100px;
+  text-align: center;
+  font-family: Arial, johanna sans, sans-serif;
+  line-height: 1.6;
+}
+.card > .btn {
+  top: 140px;
+  left: 10%;
+  font-size: 20px;
+  background-color: #333333;
+  border: none;
+  color: white;
+  width: 175px;
+  height: 58px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.btn::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: #e65100;
+  position: absolute;
+  top: 0;
+  transition-duration: 0.2s;
+  left: 0;
+  z-index: -1;
+}
+.btn:hover::after {
+  width: 100%;
+  cursor: pointer;
+}
+.btn1 {
+  margin: 20px;
+  cursor: pointer;
+}
+.card1 > img {
+  height: 100%;
+  width: 120%;
+}
+.about {
+  position: relative;
+  height: 35vh;
+  width: 90%;
+  margin-left: 5%;
+  /* border: 1px solid #000; */
+}
+.about > h3 {
+  position: relative;
+  top: 80px;
+  text-align: center;
+  font-size: 42px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family:Arial, johanna sans, sans-serif; */
+}
+.about > p {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-family: "josefin Sans", sans-serif;
+  color: rgb(211, 209, 209);
+  font-size: 16px;
+  line-height: 33px;
+}
+
+.cone {
+  height: 180vh;
+  width: 90%;
+  /* border: 2px solid #000; */
+  margin-left: 5%;
+}
+.cone .child {
+  /* border: 1px solid red; */
+  height: 50%;
+  width: 100%;
+}
+.cone .child .child1 {
+  /* border: 1px solid cyan; */
+  height: 100%;
+  width: 56%;
+  float: left;
+}
+.cone .child .child2 {
+  /* border: 1px solid green; */
+  height: 100%;
+  width: 43.6%;
+  float: left;
+}
+.cone .child .child2 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 16vh;
+  margin-left: 4%;
+}
+.cone .child .child2 p {
+  font-family: "josefin Sans", sans-serif;
+  color: rgb(211, 209, 209);
+  font-size: 0.9em;
+  line-height: 28px;
+  margin-top: 2vh;
+  margin-left: 4%;
+}
+.cone .child .child1 img {
+  height: 100%;
+  width: 100%;
+  margin-top: 4vh;
+}
+
+.big {
+  height: 840px;
+  width: 100%;
+  /* border: 1px solid #000; */
+  background-color: rgba(171, 169, 169, 0.171);
+}
+.about {
+  position: relative;
+  height: 35vh;
+  width: 90%;
+  margin-left: 5%;
+  /* border: 1px solid yellow; */
+}
+.about > h3 {
+  position: relative;
+  top: 80px;
+  text-align: center;
+  font-size: 42px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about > p {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  /* border: 1px solid #000; */
+  font-family: "josefin Sans", sans-serif;
+  color: rgb(211, 209, 209);
+  font-size: 16px;
+  line-height: 38px;
+}
+
+.cardss {
+  position: relative;
+  height: 600px;
+  width: 90%;
+  margin-left: 5%;
+  /* border: 1px solid yellow; */
+}
+.cardss > .crd1 {
+  position: relative;
+  height: 40%;
+  width: 30%;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  left: 2%;
+  top: 2%;
+  float: left;
+  margin: 0.9%;
+  background-color: white;
+}
+.crd1 > .ec {
+  position: relative;
+  background-color: #e65100;
+  height: 28%;
+  width: 18%;
+  left: 5%;
+  top: 5%;
+  border: 9px solid rgb(126, 43, 1);
+}
+.ec:hover {
+  border: 9px solid #e65100;
+  transition-duration: 1s;
+}
+.ec > .wd {
+  position: relative;
+  color: white;
+  font-size: 50px;
+  left: 12%;
+  top: 5%;
+}
+.ec > .ww {
+  position: relative;
+  color: white;
+  font-size: 48px;
+  left: 5%;
+  top: 5%;
+}
+
+.crd1 > h2 {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 41%;
+  left: 5%;
+}
+.crd1 > p {
+  position: relative;
+  top: 25%;
+  font-family: "josefin Sans", sans-serif;
+  color: rgb(211, 209, 209);
+  font-size: 16px;
+  line-height: 26px;
+  left: 5%;
+}
+.card4 {
+  position: relative;
+  height: 290px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #333333;
+  /* border: 1px solid #000; */
+}
+.card4-1 {
+  position: relative;
+  height: 100%;
+  width: 24.8%;
+  /* border: 1px solid red; */
+  float: left;
+  overflow: hidden;
+}
+.card4-1:hover {
+  background-color: #e65100;
+}
+
+.card4-1 > h1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  top: 25px;
+}
+.card4-1 > h2 {
+  text-align: center;
+  color: white;
+  top: 42px;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card4-1 > p {
+  text-align: center;
+  color: white;
+  top: 65px;
+  position: relative;
+  line-height: 33px;
+  font-size: 15px;
+  font-family: "josefin Sans", sans-serif;
+}
+.card4-1 > .arw {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+}
+.card4-1:hover .arw {
+  transition-duration: 1s;
+  animation: arw 2s infinite;
+  animation-timing-function: steps(5);
+  opacity: 1;
+  /* left: 100px; */
+}
+@keyframes arw {
+  0% {
+    left: 0;
+    transition-duration: 2s;
+  }
+  100% {
+    left: 150%;
+    transition-duration: 2s;
+  }
+}
+.imgsection {
+  height: 700px;
+  width: 100%;
+  /* border: 1px solid #000; */
+}
+.imgsection > .img2 {
+  height: 90%;
+  position: relative;
+  width: 70%;
+  margin: 100px auto;
+  top: -43px;
+  /* border: 1px solid red; */
+  background-image: url(../img/pic1.PNG);
+  background-size: 100% 100%;
+}
+.ds {
+  position: relative;
+  /* border: 1px solid #000; */
+  height: 450px;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(255, 102, 0, 0.472),
+      rgba(255, 85, 0, 0.568)
+    ),
+    url(../img/d-bg.jpg);
+  background-size: 100% 100%;
+}
+.ds > .cd1 {
+  position: relative;
+  /* border: 1px solid red; */
+  height: 408px;
+  width: 37%;
+  float: left;
+  left: 8%;
+  margin: 2%;
+}
+.ds > .cd1 > h1 {
+  position: relative;
+  color: white;
+  /* text-align: center; */
+  top: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ds > .cd1 > p {
+  position: relative;
+  color: white;
+  top: 110px;
+  line-height: 33px;
+  font-family: "josefin Sans", sans-serif;
+}
+.ds > .cd2 > img {
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  transition-duration: 1s;
+  transform: rotateX(40deg);
+  animation-name: move;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  top: 0;
+}
+@keyframes move {
+  from {
+    top: 40px;
+  }
+  to {
+    top: 0;
+  }
+}
+.ds > .cd2 {
+  left: 5%;
+}
+.icons {
+  position: relative;
+  height: 110px;
+  width: 100%;
+  /* border: 1px solid #000; */
+}
+.icons > .cards {
+  height: 108px;
+  position: relative;
+  width: 16%;
+  top: -24px;
+  border: 1px solid #333333;
+  float: left;
+  left: 298px;
+  margin: 1%;
+  background-color: #333333;
+}
+.icons > .cards:hover {
+  background-color: #e65100;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.cards > .aa {
+  position: relative;
+  color: white;
+  font-size: 45px;
+  /* text-align: center; */
+  left: 37%;
+  top: 3%;
+}
+.cards > p {
+  position: relative;
+  color: white;
+  top: 8%;
+  text-align: center;
+  font-family: "josefin Sans", sans-serif;
+}
+.cards > h2 {
+  position: relative;
+  color: white;
+  top: 13%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about > .h {
+  left: -340px;
+  /* border: 1px solid #000; */
+}
+.card3 {
+  top: 45px;
+  position: relative;
+  width: 100%;
+  height: 490px;
+  /* border: 1px solid red; */
+}
+
+.card3-1 {
+  position: relative;
+  height: 490px;
+  width: 23%;
+  top: -15px;
+  /* border: 1px solid #000; */
+  float: left;
+  margin: 1%;
+  left: 170px;
+  /* overflow: hidden; */
+}
+.card3-1 > .img {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  /* border: 1px solid purple; */
+  background-image: url(../img/team_01.jpg);
+  background-size: 100% 100%;
+}
+.card3-1 > .img1 {
+  background-image: url(../img/team_02.jpg);
+  background-size: 100% 100%;
+}
+.card3-1 > .img2 {
+  background-image: url(../img/team_03.jpg);
+  background-size: 100% 100%;
+}
+
+.img > .one11 {
+  /* border: 1px solid red; */
+  position: absolute;
+  height: 215px;
+  width: 15%;
+  left: 250px;
+  /* overflow: hidden; */
+  cursor: pointer;
+  top: -100%;
+  background-color: #e65100;
+  transition: all 1s;
+}
+.card3-1:hover .one11 {
+  top: 0%;
+}
+.one11 > .ff {
+  position: absolute;
+  left: 20px;
+  color: white;
+  top: 20px;
+  font-size: 17px;
+}
+.one11 > .ff:hover {
+  color: black;
+}
+.one11 > .tt {
+  position: absolute;
+  left: 18px;
+  color: white;
+  top: 70px;
+  font-size: 17px;
+}
+.one11 > .tt:hover {
+  color: black;
+}
+.one11 > .ld {
+  position: absolute;
+  left: 18px;
+  color: white;
+  top: 120px;
+  font-size: 17px;
+}
+.one11 > .ld:hover {
+  color: black;
+}
+.one11 > .gg {
+  position: absolute;
+  left: 18px;
+  color: white;
+  top: 170px;
+  font-size: 17px;
+}
+.one11 > .gg:hover {
+  color: black;
+}
+.prnt > h3 {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.line {
+  position: relative;
+  /* border: 1px solid brown; */
+  height: 30px;
+  width: 100%;
+}
+.black {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  transition-duration: 0.3s;
+  background-color: rgba(128, 128, 128, 0.32);
+}
+.card3-1:hover .black {
+  top: 0;
+  transition-duration: 0.3s;
+}
+.dot {
+  position: relative;
+  background-color: black;
+  height: 7px;
+  left: 150px;
+  top: 10px;
+  width: 7px;
+  border-radius: 50%;
+}
+.dot::before {
+  position: absolute;
+  content: "";
+  /* height: 1px; */
+  left: 10px;
+  width: 25px;
+  top: 2px;
+  border: 1px solid #e65100;
+  transition: all 0.5s;
+}
+.card3-1:hover ::before {
+  width: 50px;
+}
+.dot::after {
+  position: absolute;
+  content: "";
+  /* height: 1px; */
+  left: -30px;
+  width: 25px;
+  top: 2px;
+  border: 1px solid #e65100;
+  transition: all 0.5s;
+}
+.card3-1:hover ::after {
+  width: 50px;
+  left: -55px;
+}
+.card3-1 > p {
+  position: relative;
+  color: #e65100;
+  top: 15px;
+  text-align: center;
+  font-family: "josefin Sans", sans-serif;
+  font-size: 14px;
+}
+.card3-1 > .p {
+  position: relative;
+  color: rgb(211, 209, 209);
+  top: 30px;
+  line-height: 25px;
+}
+.back {
+  position: relative;
+  height: 370px;
+  top: 70px;
+  width: 100%;
+  /* border: 1px solid #00000056; */
+  background-image: linear-gradient(
+      rgba(34, 31, 31, 0.479),
+      rgba(17, 14, 14, 0.468)
+    ),
+    url(../img/ben_img_2.jpg);
+  background-size: 100% 100%;
+}
+.card4-2 {
+  position: relative;
+  height: 200px;
+  width: 70%;
+  left: 150px;
+  top: 95px;
+  /* border: 1px solid red; */
+  margin: 6%;
+}
+.crd-2 {
+  position: relative;
+  /* border: 1px solid orange; */
+  width: 15%;
+  height: 200px;
+  float: left;
+  margin: 45px;
+  top: -45px;
+}
+.crd-2 > .apl {
+  position: absolute;
+  /* border: 1px solid blue; */
+  width: 60%;
+  height: 80px;
+  margin: 12%;
+  background-color: #e65100;
+}
+.apl > .aaple {
+  color: white;
+  margin-left: 20%;
+  /* margin-top: 10px; */
+  font-size: 70px;
+}
+.crd-2 > h1 {
+  color: white;
+  position: relative;
+  top: 108px;
+  left: 24px;
+}
+.crd-2 > h2 {
+  color: #e65100;
+  position: relative;
+  top: 108px;
+  left: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.apl > .one {
+  font-size: 60px;
+  margin-left: 5px;
+  margin-top: 4px;
+}
+.apl > .two {
+  margin-left: 10px;
+  margin-top: 4px;
+}
+.biggg {
+  position: relative;
+  height: 825px;
+  width: 100%;
+  top: 70px;
+  /* border: 1px solid red; */
+  background-color: rgba(171, 169, 169, 0.258);
+}
+.about {
+  position: relative;
+  height: 35vh;
+  width: 90%;
+  margin-left: 5%;
+  /* border: 1px solid #000; */
+}
+.abt1 {
+  top: 68px;
+}
+.hhh {
+  margin-left: 690px;
+}
+.biggg > .card55 {
+  height: 490px;
+  width: 22%;
+  left: 180px;
+  position: relative;
+  float: left;
+  top: 90px;
+  margin: 1%;
+  /* border: 1px solid purple; */
+  background-color: white(245, 222, 179, 0.427);
+}
+
+.biggg > .card55:hover {
+  box-shadow: 5px 8px 10px 6px rgba(128, 128, 128, 0.508);
+}
+.one44 {
+  box-shadow: 5px 5px 10px 6px rgba(128, 128, 128, 0.472);
+}
+.card55 > h1 {
+  color: #e65100;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card55 > p {
+  text-align: center;
+  color: #e65100;
+  margin-top: 15px;
+  font-family: "josefin Sans", sans-serif;
+}
+.card55 > .one00 {
+  position: relative;
+  width: 50%;
+  height: 43px;
+  background-color: #333333;
+  top: 20px;
+  left: 68px;
+  transition-duration: 1s;
+  /* text-align: center; */
+  /* border-radius: 20px; */
+}
+.card55:hover .one00 {
+  background-color: #e65100;
+  /* transition-duration: 1s; */
+}
+.card55 > .p50 {
+  color: #333333;
+  margin-top: 37px;
+  font-size: 15px;
+  line-height: 40px;
+  font-family: "josefin Sans", sans-serif;
+}
+.card55 > .p1 {
+  margin-top: 1px;
+  font-size: 15px;
+  color: #333333;
+  line-height: 40px;
+}
+.card55 > .p2 {
+  margin-top: 1px;
+  font-size: 15px;
+  color: #333333;
+  line-height: 40px;
+}
+.card55 > .p3 {
+  margin-top: 1px;
+  font-size: 15px;
+  color: #333333;
+  line-height: 40px;
+}
+.card55 > .p4 {
+  margin-top: 1px;
+  font-size: 15px;
+  color: #333333;
+  line-height: 40px;
+}
+.card55 > button {
+  position: relative;
+  top: 20px;
+  background-color: #333333;
+  height: 43px;
+  width: 40%;
+  left: 90px;
+  border: none;
+  color: white;
+  font-size: 17px;
+  overflow: hidden;
+  z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card55 > button::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background-color: #e65100;
+  position: absolute;
+  top: 0%;
+  transition-duration: 1.5s;
+  left: 0;
+  z-index: -1;
+}
+.card55 > button:hover::after {
+  width: 100%;
+  cursor: pointer;
+}
+.card55 > .one00 > h3 {
+  position: relative;
+  text-align: center;
+  color: white;
+  top: 10px;
+  font-weight: lighter;
+  font-family: "josefin Sans", sans-serif;
+}
+.happy{
+  /* border: 1px solid red; */
+  height: 600px;
+  width: 100%;
+  top: 70px;
+  position:relative;
+}
+.client{
+position: absolute;
+/* border: 1px solid #000; */
+height: 150px;
+width: 90%;
+margin: 5%;
+}
+.client>h3{
+  position: relative;
+  /* top: 80px;  */
+  text-align: center;
+  font-size: 42px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family:Arial, johanna sans, sans-serif; */
+}
+.client > p {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-family: "josefin Sans", sans-serif;
+  color: rgb(211, 209, 209);
+  font-size: 16px;
+  line-height: 33px;
+}
+.sl1{
+  position: relative;
+  /* border: 1px solid orangered; */
+  height: 290px;
+  width: 48%;
+  top: 270px;
+  left: 335px;
+  color: white;
+  box-shadow: 3px 5px 40px 7px rgba(128, 128, 128, 0.472);
+}
+.sl1>.c1{
+  position: relative;
+  top: 40px;
+  text-align: center;
+  font-family: "josefin Sans", sans-serif;
+  color: rgba(128, 125, 125, 0.547);
+  font-size: 13px;
+  line-height: 25px;
+}
+.sl1>h3{
+  position: relative;
+  top: 62px;
+  text-align: center;
+  font-family: "josefin Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.772);
+  line-height: 25px;
+  font-size: 23px;
+}
+.sl1>p{
+  position: relative;
+  top: 70px;
+  text-align: center;
+  font-family: "josefin Sans", sans-serif;
+  color: rgba(128, 125, 125, 0.547);
+  font-size: 15px;
+  line-height: 25px;
+}
+.onep{
+  position: relative;
+  height: 45px;
+  width: 28%;
+  /* border: 1px solid peru; */
+  top: 75px;
+  left: 240px;
+  background-image: url(../img/11.PNG);
+  /* background-size: 100% 100%; */
+  background-repeat: no-repeat;
+}
+.color{
+  position: relative;
+  background-color: #e65100;
+  height: 520px;
+  top: 100px;
+  width: 100%;
+  clear: both;
+}
+.color>.one77{
+  position: relative;
+  /* border: 1px solid black; */
+  height: 370px;
+  top: 35px;
+  float: left;
+  left: 130px;
+  margin: 3%;
+  width: 30%;
+  background-image: url(../img/o1.PNG);
+  background-size: 100% 100%;
+}
+.color>.bb{
+  height: 290px;
+  width: 30%;
+  background-image: url(../img/about-02.png);
+  background-size: 100% 100%;
+  transform: skewX(15deg);
+}
+.gt{
+  position: relative;
+  height: 700px;
+  width: 100%;
+  top: 100px;
+  /* border: 1px solid red; */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.619),rgba(0, 0, 0, 0.549)),url(../img/bg.png);
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; */
+}
+.gt>.nur{
+  height: 150px;
+  width: 70%;
+  top: 50px;
+  /* margin: 5%; */
+  left: 210px;
+  position:relative;
+  /* border: 1px solid #000; */
+  
+}
+.nur>h3{
+  position: relative;
+  top: 40px;
+  text-align: center;
+  font-family: "josefin Sans", sans-serif;
+  color: white;
+  line-height: 25px;
+  font-size: 35px;
+}
+.nur>.qm{
+  position: relative;
+  /* border: 1px solid red; */
+  width: 2.5%;
+  background-color: white;
+  height: 23px;
+  left: 460px;
+  top: 68px;
+  border-radius: 50%;
+}
+.qm>.mqq{
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  font-size: 20px;
+  color: #333333b0;
+}
+.input{
+  height: 460px;
+  width: 90%;
+  top: -380px;
+  /* margin: 5%; */
+  left: 70px;
+  position:relative;
+  /* border: 1px solid red; */
+}
+.input>.input1{
+ 
+    background-color: transparent;
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    top: 10px;
+    color: white;
+    left: 70px;
+    font-size: 16px;
+    height: 55px;
+    width: 40%;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #ffffff;
+    /* outline: none; */
+}
+.input>.int2{
+  left: 150px;
+}
+.input>.int3{
+  width: 87%;
+  height: 130px !important;
+  /* line-height: 1.5; */
+  top: 50px;
+
+}
+.input>button{
+  position: relative;
+  height: 45px;
+  width: 9.5%;
+  top: 170px;
+  left: -990px;
+  font-family: "josefin Sans"sans-serif;
+  font-size: 17px;
+  color: #333333;
+  z-index: 1;
+  border: none;
+
+}
+.input > button::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background-color: #e65100;
+  position: absolute;
+  top: 0%;
+  transition-duration: 0.2s;
+  left: 0;
+  z-index: -1;
+}
+.input > button:hover::after {
+  width: 100%;
+  cursor: pointer;
+}
+.input>button:hover {
+  color: white;
+}
+.wb{
+  /* position: absolute; */
+  height: 430px;
+  margin-top: -360px;
+  width: 100%;
+  /* border: 1px solid red; */
+  background-color: #333333;
+}
+.wb>h1{
+  text-align: center;
+  position: relative;
+  top: 70px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wb>p{
+  text-align: center;
+  position: relative;
+  top: 90px;
+  color: #ffffff72;
+  line-height: 28px;
+  font-size: 15px;
+  font-family: "josefin Sans", sans-serif;
+}
+.wb>.ed{
+  position: relative;
+  height: 45px;
+  width: 30%;
+  left: 490px;
+  top: 120px;
+  /* border: 1px solid purple; */
+}
+.ed>.or{
+  position: relative;
+  height: 44px;
+  width: 22.5%;
+  left: 312px;
+  top: -44px;
+  /* border: 1px solid red; */
+  background-color: #e65100;
+  transition-duration: 1s;
+ 
+
+}
+.ed:hover{
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, 0.309);
+}
+.ed>.or:hover{
+  background-color: #333333;
+  transition-duration: 1s;
+}
+.ed>input{
+  position: relative;
+  height: 44px;
+  width: 77%;
+  border: none;
+    outline: none;
+}
+.ss{
+  position: relative;
+  color: #ffffff;
+  font-size: 35px;
+  top: 4px;
+  left: 25px;
+}
+.footer{
+  position: relative;
+  top: 208px;
+  width: 100%;
+  height: 80px;
+  /* border: 1px solid palegreen; */
+  border-top: 2px solid rgba(58, 57, 57, 0.801);
+
+}
+.footer>p{
+  position: relative;
+  text-align: center;
+  top: 35px;
+  color: #ffffff72;
+
+  font-size: 13px;
+  font-family: "josefin Sans", sans-serif;
+}
+span{
+  color: #ffffff;
+}
+span:hover{
+  color: #e65100;
+}
