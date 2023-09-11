@@ -1124,6 +1124,9 @@ margin: 5%;
     border-bottom: 1px solid #ffffff;
     /* outline: none; */
 }
+.input1::placeholder{
+  color: white;
+}
 .input>.int2{
   left: 150px;
 }
@@ -1172,6 +1175,8 @@ margin: 5%;
   width: 100%;
   /* border: 1px solid red; */
   background-color: #333333;
+  
+
 }
 .wb>h1{
   text-align: center;
@@ -1206,9 +1211,8 @@ margin: 5%;
   /* border: 1px solid red; */
   background-color: #e65100;
   transition-duration: 1s;
- 
-
 }
+
 .ed:hover{
   box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, 0.309);
 }
@@ -1235,16 +1239,14 @@ margin: 5%;
   top: 208px;
   width: 100%;
   height: 80px;
+  border-top: 2px solid rgba(66, 66, 66, 0.398);
   /* border: 1px solid palegreen; */
-  border-top: 2px solid rgba(58, 57, 57, 0.801);
-
 }
 .footer>p{
   position: relative;
   text-align: center;
   top: 35px;
   color: #ffffff72;
-
   font-size: 13px;
   font-family: "josefin Sans", sans-serif;
 }
